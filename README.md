@@ -46,6 +46,7 @@ query{
 ```
 - Response
 ```json
+{
 	"data": {
 		"command": [
 			{
