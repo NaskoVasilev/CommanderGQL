@@ -4,7 +4,7 @@ GraphQL API with .NET 6 and Hot Chocolate
 ## Queries
 #### Get Platforms Query
 - Request
-```json
+```graphql
 query {
 	platform {
 		id
@@ -31,7 +31,7 @@ query {
 ```
 #### Get Commands query
 - Request
-```json
+```graphql
 query{
 	command{
 		id
@@ -72,7 +72,7 @@ query{
 ```
 #### Parallel Platforms
 - Request
-```json
+```graphql
 query{
 	a: platform{
 		id
@@ -127,7 +127,7 @@ query{
 ```
 #### Get Platform Commands
 - Request
-```json
+```graphql
 query{
 	platform{
 		id
@@ -170,7 +170,7 @@ query{
 ```
 #### Filter request
 - Request
-```json
+```graphql
 query {
 	command(where: { platformId: { eq: 7 }}) {
 		id
@@ -201,7 +201,7 @@ query {
 ```
 #### Sorting request
 - Request
-```json
+```graphql
 query {
 	platform(order: {name: ASC}) {
 		name
@@ -226,7 +226,7 @@ query {
 ## Mutations
 #### Add Platform
 - Request
-```json
+```graphql
 mutation {
 	addPlatform(input: {
 		name: "RedHat"
@@ -251,7 +251,7 @@ mutation {
 ```
 #### Add Command
 - Request
-```json
+```graphql
 mutation {
 	addCommnad(input: {
 		howTo: "Platform directory listing"
@@ -281,7 +281,7 @@ mutation {
 }
 ```
 ## Subscriptions
-```json
+```graphql
 subscription {
   onPlatformAdded {
     id
