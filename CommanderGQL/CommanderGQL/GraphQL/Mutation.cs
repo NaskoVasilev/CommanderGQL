@@ -2,6 +2,7 @@
 using CommanderGQL.GraphQL.Commands;
 using CommanderGQL.GraphQL.Platforms;
 using CommanderGQL.Models;
+
 using HotChocolate.Subscriptions;
 
 namespace CommanderGQL.GraphQL

@@ -1,4 +1,5 @@
 ﻿using CommanderGQL.Models;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace CommanderGQL.Data
